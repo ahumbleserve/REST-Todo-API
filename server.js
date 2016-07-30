@@ -14,7 +14,7 @@ var todos = [
 	},
 	{
 		id:3,
-		description:'Study to node.js course',
+		description:'Study to node.js course today!',
 		completed:true
 	}
 ]
