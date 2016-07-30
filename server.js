@@ -11,6 +11,11 @@ var todos = [
 		id:2,
 		description:'Go to market',
 		completed:false
+	},
+	{
+		id:3,
+		description:'Study to node.js course',
+		completed:true
 	}
 ]
 
