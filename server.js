@@ -30,7 +30,21 @@ app.get('/todos',function (req, res){
 
 // GET /todos/:id
 app.get('/todos/:id',function (req, res){
-	res.send(todos[req.id]);
+	var todoId = parseInt(req.params.id,10);
+	var match;
+	
+	todos.forEach(function(todo){
+		if(todoId === todo.id){
+			match = todo;
+		}
+	});
+
+	if(match){
+		res.json(match);
+	} else{
+		res.status(404).send();
+	}
+	//res.send(todos[]);
 })
 
 
