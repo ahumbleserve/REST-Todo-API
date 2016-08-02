@@ -70,7 +70,8 @@ app.delete('/todos/:id', function(req, res) {
 	var matchedTodo = _.findWhere(todos, {
 		id: todoId
 	});
-
+	console.log(todos);
+	console.log(todoId);
 	if (!matchedTodo) {
 		res.status(404).json({
 			"error": "no todo found with that id"
