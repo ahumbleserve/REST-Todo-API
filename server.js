@@ -72,6 +72,7 @@ app.delete('/todos/:id', function(req, res) {
 	});
 	console.log(todos);
 	console.log(todoId);
+	console.log(matchedTodo);
 	if (!matchedTodo) {
 		res.status(404).json({
 			"error": "no todo found with that id"
