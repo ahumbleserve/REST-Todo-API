@@ -1,7 +1,7 @@
 name: pipeline mock
 on: push
 jobs:
-  my-job:
+  pipeline01:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
