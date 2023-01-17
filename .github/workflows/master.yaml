@@ -1,4 +1,4 @@
-name: hello-world
+name: pipeline mock
 on: push
 jobs:
   my-job:
