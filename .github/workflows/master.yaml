@@ -2,14 +2,17 @@ name: Compliance
 
 on:
   push:
-  workflow_call:   
+  workflow_call:
+    inputs:
+      meu-param-01:
+        required: true
+        type: string
 jobs:
   pipeline01:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        run: echo "Checkout Repo"
-      - name: build
+      - name: faz-uara-uara
+        run: echo "uara-uara-uara-uara-uara-uara-uara-uara-uara-uara-uara-uara-uara-uara-uara-uara"
+      - name: faz-outra-coisa
         run: echo "Build"
-      - name: upload
-        run: echo "Uploading Image"        
+          
