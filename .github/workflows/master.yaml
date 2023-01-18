@@ -1,5 +1,7 @@
 name: pipeline mock
-on: push
+on: 
+  push:
+  workflow_call:
 jobs:
   pipeline01:
     runs-on: ubuntu-latest
