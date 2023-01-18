@@ -1,7 +1,8 @@
-name: pipeline mock
-on: 
+name: Compliance
+
+on:
   push:
-  workflow_call:
+  workflow_call:   
 jobs:
   pipeline01:
     runs-on: ubuntu-latest
